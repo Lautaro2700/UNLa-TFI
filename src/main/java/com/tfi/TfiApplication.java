@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TfiMonolitoApplication {
+public class TfiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TfiMonolitoApplication.class, args);
+		SpringApplication.run(TfiApplication.class, args);
 	}
 
 }
