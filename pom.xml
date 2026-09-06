@@ -6,17 +6,29 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>4.1.1</version>
+		<version>4.0.8</version>
 		<relativePath/>
 	</parent>
-	<groupId>com.tfi</groupId>
-	<artifactId>tfi</artifactId>
+	<groupId>com.tfi.auth</groupId>
+	<artifactId>ms-auth</artifactId>
+	<name>ms-auth</name>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
 		<java.version>25</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
+	<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>2025.1.3</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -79,7 +91,11 @@
 			<version>0.12.5</version>
 			<scope>runtime</scope>
 		</dependency>
-	</dependencies>
+		<dependency>
+    		<groupId>org.springframework.cloud</groupId>
+    		<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			</dependency>
+		</dependencies>
 
 	<build>
 		<plugins>
