@@ -1,0 +1,41 @@
+HELP.md
+
+# Build & Output 
+target/
+**/target/
+bin/
+**/bin/
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+# Eclipse / STS 
+.apt_generated
+.classpath
+**/.classpath
+.factorypath
+**/.factorypath
+.project
+**/.project
+.settings/
+**/.settings/
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA
+.idea/
+**/.idea/
+*.iws
+*.iml
+*.ipr
+
+# VS Code
+.vscode/
+**/.vscode/
+
+# Logs & OS
+*.log
+.DS_Store
+Thumbs.db
